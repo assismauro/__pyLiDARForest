@@ -13,6 +13,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "drafts", "drafts\drafts.pyp
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "metrics", "metrics\metrics.pyproj", "{3630FEB2-56DF-43EB-89C7-A94D7D2187D7}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pyLiDARForest", "pyLiDARForest\pyLiDARForest.pyproj", "{95A1E6BB-973D-4905-9D05-F23CC05B2994}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,8 @@ Global
 		{639741F1-59A0-49BA-8056-5525A048C3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3630FEB2-56DF-43EB-89C7-A94D7D2187D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3630FEB2-56DF-43EB-89C7-A94D7D2187D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A1E6BB-973D-4905-9D05-F23CC05B2994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A1E6BB-973D-4905-9D05-F23CC05B2994}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
