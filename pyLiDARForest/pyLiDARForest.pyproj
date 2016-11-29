@@ -27,8 +27,12 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="README.md" />
-    <Content Include="transect1.png" />
+    <Content Include="..\README.md">
+      <Link>README.md</Link>
+    </Content>
+    <Content Include="..\transect1.png">
+      <Link>transect1.png</Link>
+    </Content>
   </ItemGroup>
   <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
   <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
