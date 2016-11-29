@@ -3,15 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>88ed60cf-f689-41ef-b1e6-d01b58c54ca4</ProjectGuid>
+    <ProjectGuid>3630feb2-56df-43eb-89c7-a94d7d2187d7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>validate.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>validate</Name>
-    <RootNamespace>validate</RootNamespace>
+    <Name>metrics</Name>
+    <RootNamespace>metrics</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,19 +22,16 @@
     <DebugSymbols>true</DebugSymbols>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="CheckDirFileStruct.py" />
-    <Compile Include="validate.py" />
-    <Compile Include="validateLAS.py" />
-    <Compile Include="valParameters.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="filestruct.txt" />
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CHM.py" />
+    <Compile Include="DTM.py" />
+    <Compile Include="gridmetrics.py" />
+    <Compile Include="plotcsv.py" />
+  </ItemGroup>
   <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
   <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

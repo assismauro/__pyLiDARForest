@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "validate", "validate\validate.pyproj", "{88ED60CF-F689-41EF-B1E6-D01B58C54CA4}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "stuff", "stuff\stuff.pyproj", "{7293BE6E-6F34-43A0-AA21-8C2336A0729D}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "lidarutils", "lidarutils\lidarutils.pyproj", "{541613D7-2199-47DA-B177-E23195C899C9}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "drafts", "drafts\drafts.pyproj", "{639741F1-59A0-49BA-8056-5525A048C3F2}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "metrics", "metrics\metrics.pyproj", "{3630FEB2-56DF-43EB-89C7-A94D7D2187D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88ED60CF-F689-41EF-B1E6-D01B58C54CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88ED60CF-F689-41EF-B1E6-D01B58C54CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7293BE6E-6F34-43A0-AA21-8C2336A0729D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7293BE6E-6F34-43A0-AA21-8C2336A0729D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{541613D7-2199-47DA-B177-E23195C899C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{541613D7-2199-47DA-B177-E23195C899C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{639741F1-59A0-49BA-8056-5525A048C3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{639741F1-59A0-49BA-8056-5525A048C3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3630FEB2-56DF-43EB-89C7-A94D7D2187D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3630FEB2-56DF-43EB-89C7-A94D7D2187D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

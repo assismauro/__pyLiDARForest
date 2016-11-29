@@ -3,15 +3,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>88ed60cf-f689-41ef-b1e6-d01b58c54ca4</ProjectGuid>
+    <ProjectGuid>541613d7-2199-47da-b177-e23195c899c9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>validate.py</StartupFile>
+    <StartupFile>lidarutils.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>validate</Name>
-    <RootNamespace>validate</RootNamespace>
+    <Name>lidarutils</Name>
+    <RootNamespace>lidarutils</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,13 +22,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CheckDirFileStruct.py" />
-    <Compile Include="validate.py" />
-    <Compile Include="validateLAS.py" />
-    <Compile Include="valParameters.py" />
+    <Compile Include="lasFWF.py" />
+    <Compile Include="lidarutils.py" />
+    <Compile Include="pyForestLASTools.py" />
+    <Compile Include="pyLASTools.py" />
+    <Compile Include="testFWF.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="filestruct.txt" />
+    <Content Include="lidarutils.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
