@@ -33,6 +33,7 @@
     <Compile Include="las2img.py" />
     <Compile Include="lasStats.py" />
     <Compile Include="outlier.py" />
+    <Compile Include="procScriptMultithread.py" />
   </ItemGroup>
   <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
   <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
