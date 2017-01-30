@@ -36,35 +36,41 @@ class pyLASTools(object):
             print(out)
         return out, err
 
-    def lasground(self,inputfname,outputfname,options="",commandonly=False,verbose=False):
-        self.runcommand(r"lasground -i {0} -o {1} {2}".format(inputfname,outputfname,options),commandonly,verbose)
+    def lasnoise(self,inputfname,outputfname="",options="",commandonly=False,verbose=False):
+        self.runcommand(r"lasnoise -i {0} {1} {2}".format(inputfname,"-o {0}".format(outputfname) if outputfname != "" else "",options),commandonly,verbose)
+
+    def lasground(self,inputfname,outputfname="",options="",commandonly=False,verbose=False):
+        self.runcommand(r"lasground -i {0} {1} {2}".format(inputfname,"-o {0}".format(outputfname) if outputfname != "" else "",options),commandonly,verbose)
        
-    def lasheight(self,inputfname,outputfname,options="",commandonly=False,verbose=False):
-        self.runcommand(r"lasheight -i {0} -o {1} {2}".format(inputfname,outputfname,options),commandonly,verbose)
+    def lasheight(self,inputfname,outputfname="",options="",commandonly=False,verbose=False):
+        self.runcommand(r"lasheight -i {0} {1} {2}".format(inputfname,"-o {0}".format(outputfname) if outputfname != "" else "",options),commandonly,verbose)
     
-    def las2las(self,inputfname,outputfname,options="",commandonly=False,verbose=False):
-        self.runcommand(r"las2las -i {0} -o {1} {2}".format(inputfname,outputfname,options),commandonly,verbose)
+    def las2las(self,inputfname,outputfname="",options="",commandonly=False,verbose=False):
+        self.runcommand(r"las2las -i {0} {1} {2}".format(inputfname,"-o {0}".format(outputfname) if outputfname != "" else "",options),commandonly,verbose)
 
-    def blast2dem(self,inputfname,outputfname,step=0.5,options="",commandonly=False,verbose=False):
-        self.runcommand(r"blast2dem -i {0} -o {1} -step {2} {3}".format(inputfname,outputfname,step,options),commandonly,verbose)
+    def lasclassify(self,inputfname,outputfname="",options="",commandonly=False,verbose=False):
+        self.runcommand(r"lasclassify -i {0} {1} {2}".format(inputfname,"-o {0}".format(outputfname) if outputfname != "" else "",options),commandonly,verbose)
 
-    def lastile(self,inputfname,outputfname,options="",commandonly=False,verbose=False):
+    def blast2dem(self,inputfname,outputfname="",step=0.5,options="",commandonly=False,verbose=False):
+        self.runcommand(r"blast2dem -i {0} {1} -step {2} {3}".format(inputfname,"-o {0}".format(outputfname) if outputfname != "" else "",step,options),commandonly,verbose)
+
+    def lastile(self,inputfname,outputfname="",options="",commandonly=False,verbose=False):
         self.runcommand(r"lastile -i {0} {1} {2}".format(\
-            inputfname,"-o "+outputfname if outputfname != "" else "",options),commandonly,verbose)
+            inputfname,"-o {0}".format(outputfname) if outputfname != "" else "",options),commandonly,verbose)
 
-    def lasthin(self,inputfname,outputfname,options,commandonly=False,verbose=False):
+    def lasthin(self,inputfname,outputfname="",options="",commandonly=False,verbose=False):
         self.runcommand(r"lasthin -i {0} {1} {2}".format(\
-            inputfname,"-o "+outputfname if outputfname != "" else "",options),commandonly,verbose)
+            inputfname,"-o {0}".format(outputfname) if outputfname != "" else "",options),commandonly,verbose)
 
-    def lasmerge(self,inputfname,outputfname,options,commandonly=False,verbose=False):
-        self.runcommand(r"lasmerge -i {0} -o {1} {2}".format(\
-            inputfname,outputfname,options),commandonly,verbose)
+    def lasmerge(self,inputfname,outputfname="",options="",commandonly=False,verbose=False):
+        self.runcommand(r"lasmerge -i {0} {1} {2}".format(\
+            inputfname,"-o {0}".format(outputfname) if outputfname != "" else "",options),commandonly,verbose)
 
     def lasgrid(self,inputfname,outputfname,step=0.5,options="",commandonly=False,verbose=False):
-        self.runcommand(r"lasgrid -i {0} -step {1} -average -o {2} -mem 1900".format(inputfname,step,outputfname),commandonly,verbose)
+        self.runcommand(r"lasgrid -i {0} -step {1} -average {2} -mem 1900".format(inputfname,step,"-o {0}".format(outputfname) if outputfname != "" else ""),commandonly,verbose)
 
-    def lascanopy(self,inputfname,outputfname,step=0.5,options="",
+    def lascanopy(self,inputfname,outputfname="",step=0.5,options="",
                   commandonly=False,verbose=False):
-        self.runcommand(r"lascanopy -i {0} -o {1} -step {2} {3}".format(inputfname,outputfname,step,options),commandonly,verbose)
+        self.runcommand(r"lascanopy -i {0} {1} -step {2} {3}".format(inputfname,"-o {0}".format(outputfname) if outputfname != "" else "",step,options),commandonly,verbose)
 
     
